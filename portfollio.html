@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f7f2">
-  <meta name="description" content="Portfolio d�un �tudiant en BTS SIO option SLAM : projets, comp�tences et parcours en d�veloppement informatique.">
-  <title>Portfolio � �tudiant en BTS SIO SLAM</title>
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Portfolio d'un étudiant en BTS SIO option SLAM : projets, compétences et parcours en développement informatique.">
+  <title>Portfolio étudiant en BTS SIO SLAM</title>
   <style>
     :root{
-      --ink:#191516;
-      --muted:#756b6c;
-      --paper:#f7f4f4;
-      --white:#fff;
+      --ink:#f3eeee;
+      --muted:#b8adaf;
+      --paper:#111111;
+      --white:#1b1b1b;
       --green:#ef3340;
-      --line:#e5d9da;
-      --dark:#171315
+      --line:#383234;
+      --dark:#080808
     }
     *{
       box-sizing:border-box
@@ -50,10 +50,10 @@
       gap:28px
     }.navlinks a{
       text-decoration:none;
-      color:#526159;
+      color:#c4babc;
       font-size:.9rem
     }.navlinks a:hover{
-      color:#17241f
+      color:#ffffff
     }
     .hero{
       padding:78px 0 88px;
@@ -75,7 +75,7 @@
       height:8px;
       border-radius:50%;
       background:#ef3340;
-      box-shadow:0 0 0 4px #f7dadd
+      box-shadow:0 0 0 4px #482026
     }.hero h1{
       font-size:clamp(3rem,7vw,5.5rem);
       line-height:.99;
@@ -105,7 +105,7 @@
       color:white
     }.secondary{
       border:1px solid var(--line);
-      background:#fff
+      background:#1b1b1b
     }.hero-card{
       background:var(--dark);
       color:#fff;
@@ -159,6 +159,12 @@
       letter-spacing:.13em;
       text-transform:uppercase;
       color:#c32231
+    }.kickerContact{
+      font-size:.75rem;
+      font-weight:800;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      color:#000000
     }.section-head h2{
       font-size:clamp(2rem,4vw,3rem);
       letter-spacing:-.06em;
@@ -176,7 +182,7 @@
       border-top:1px solid var(--line)
     }.about-copy{
       font-size:1.1rem;
-      color:#536159
+      color:#c4babc
     }.about-copy strong{
       color:var(--ink)
     }.facts{
@@ -184,7 +190,7 @@
       grid-template-columns:1fr 1fr;
       gap:12px
     }.fact{
-      background:white;
+      background:#1b1b1b;
       border:1px solid var(--line);
       padding:19px;
       border-radius:10px
@@ -196,13 +202,13 @@
       color:var(--muted)
     }
     .skills{
-      background:#edf0e9
+      background:#181818
     }.skill-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:14px
     }.skill{
-      background:white;
+      background:#1b1b1b;
       padding:23px;
       border-radius:12px
     }.skill .num{
@@ -224,15 +230,15 @@
       font: .72rem ui-monospace,monospace;
       padding:5px 9px;
       border-radius:5px;
-      background:#f8e9ea;
-      color:#6d252b
+      background:#352124;
+      color:#f0aab0
     }
     .projects{
       display:grid;
       grid-template-columns:repeat(2,1fr);
       gap:16px
     }.project{
-      background:white;
+      background:#1b1b1b;
       border:1px solid var(--line);
       border-radius:13px;
       padding:25px;
@@ -247,13 +253,13 @@
       width:42px;
       height:42px;
       border-radius:10px;
-      background:#fae7e9;
+      background:#352124;
       display:grid;
       place-items:center;
       font-size:1.2rem
     }.project-type{
       font: .72rem ui-monospace,monospace;
-      color:#78847d
+      color:#b8adaf
     }.project h3{
       margin:21px 0 7px;
       font-size:1.25rem;
@@ -269,6 +275,34 @@
       font-size:.82rem;
       color:var(--muted);
       margin-top:18px
+    }
+    .internships{
+      background:#181818
+    }.internship-list{
+      display:grid;
+      gap:16px
+    }.internship{
+      display:grid;
+      grid-template-columns:190px 1fr;
+      gap:28px;
+      padding:26px;
+      background:#1b1b1b;
+      border:1px solid var(--line);
+      border-radius:13px
+    }.internship-date{
+      color:#f0aab0;
+      font: .78rem ui-monospace,monospace;
+      letter-spacing:.04em
+    }.internship h3{
+      margin:0 0 4px;
+      font-size:1.2rem
+    }.internship-place{
+      color:var(--muted);
+      font-size:.88rem
+    }.internship p{
+      margin:14px 0 0;
+      color:var(--muted);
+      font-size:.9rem
     }
     .journey{
       background:var(--dark);
@@ -314,7 +348,7 @@
       margin:8px 0
     }.contact p{
       margin:0;
-      color:#45563c
+      color:#000000
     }.contact .button{
       background:var(--dark);
       color:white;
@@ -382,6 +416,7 @@
   <a href="#profil">Profil</a>
   <a href="#competences">Compétences</a>
   <a href="#projets">Projets</a>
+  <a href="#stages">Stages</a>
   <a href="#contact">Contact</a>
   </div>
   </nav>
@@ -401,7 +436,7 @@
   <a class="button secondary" href="#contact">Me contacter</a>
   </div>
   </div>
-      <aside class="hero-card" aria-label="Pr�sentation du profil">
+      <aside class="hero-card" aria-label="Présentation du profil">
   <div class="code-label">// profil développeur</div>
   <div class="code">
   <span class="comment">const étudiant = {
@@ -425,16 +460,13 @@
   <div class="kicker">01 à propos</div>
   <h2>Apprendre.<br>Construire.<br>Progresser.</h2>
   </div>
-  <div>
-  <p class="about-copy"></p>
-  <div class="facts">
-  <div class="fact">
-  <b>Formation</b>
-  <span>BTS SIO  option SLAM</span>
+
+
+  </span>
   </div>
   <div class="fact">
   <b>Objectif</b>
-  <span>Mon objectif est de devenir ingénieur en cybersécurité dans plusieurs années pentester, en mettant à profit ma rigueur, ma logique et mon autonomie.s</span>
+  <span>Mon objectif est de devenir ingénieur en cybersécurité dans plusieurs années pentester, en mettant à profit ma rigueur, ma logique et mon autonomies.</span>
   </div>
   </div>
   </div>
@@ -443,39 +475,39 @@
   <div class="wrap">
   <div class="section-head">
   <div>
-  <div class="kicker">02 � Comp�tences</div>
+  <div class="kicker">02 Mes Compétences</div>
   <h2>Mes outils & savoir-faire</h2>
   </div>
-  <p>Comp�tences abord�es pendant ma formation et que je continue � approfondir au fil des projets.</p>
+  <p>Compétences abordées pendant ma formation et que je continue à approfondir au fil des projets.</p>
   </div>
   <div class="skill-grid">
   <article class="skill">
   <span class="num">01 / WEB</span>
-  <h3>D�veloppement web</h3>
-  <p>Cr�er des interfaces accessibles et adapter leur affichage aux diff�rents �crans.</p>
+  <h3>Développement web</h3>
+  <p>Créer des interfaces accessibles et adapter leur affichage aux différents écrans.</p>
   <div class="tags">
   <span class="tag">HTML</span>
   <span class="tag">CSS</span>
-  <span class="tag">JavaScript</span>
   </div>
   </article>
   <article class="skill">
   <span class="num">02 / CODE</span>
   <h3>Programmation</h3>
-  <p>Structurer un programme, r�soudre des probl�mes et d�couvrir la programmation orient�e objet.</p>
+  <p>Structurer un programme, résoudre des problèmes et la programmation orientée objet.</p>
   <div class="tags">
-  <span class="tag">[PHP / Java]</span>
+  <span class="tag">PHP</span>
+  <span class="tag">C#</span>
   <span class="tag">Algorithmique</span>
   </div>
   </article>
   <article class="skill">
   <span class="num">03 / DATA</span>
-  <h3>Donn�es & outils</h3>
-  <p>Concevoir une base de donn�es, �crire des requ�tes et suivre les versions d�un projet.</p>
+  <h3>Données & outils</h3>
+  <p>Concevoir une base de données, écrire des requêtes et suivre les versions d'un projet.</p>
   <div class="tags">
   <span class="tag">SQL</span>
   <span class="tag">Git</span>
-  <span class="tag">[MySQL]</span>
+  <span class="tag">[MySQL / MariaDB]</span>
   </div>
   </article>
   </div>
@@ -484,62 +516,101 @@
     <section class="wrap" id="projets">
   <div class="section-head">
   <div>
-  <div class="kicker">03 � R�alisations</div>
-  <h2>Une s�lection de projets</h2>
+  <div class="kicker">03  Réalisations</div>
+  <h2>Une sélection de projets</h2>
   </div>
-  <p>Les projets scolaires ou personnels montrent concr�tement ma fa�on de r�fl�chir et de d�velopper.</p>
+  <p>Les projets scolaires ou personnels montrent concrètement ma façon de réfléchir et de développer.</p>
   </div>
   <div class="projects">
   <article class="project">
   <div class="project-top">
-  <div class="project-icon">?</div>
-  <span class="project-type">[ANN�E] � [�COLE / PERSONNEL]</span>
+  <div class="project-icon">placeHOLDER</div>
+  <span class="project-type">[ANNÉE] ET [ÉCOLE / PERSONNEL]</span>
   </div>
-  <h3>[Nom de votre projet web]</h3>
-  <p>Pr�sentez le besoin, les fonctionnalit�s principales et votre contribution. Par exemple : un site vitrine responsive r�alis� dans le cadre d�un exercice.</p>
+  <h3>placeHOLDER</h3>
+  <p>placeHOLDER</p>
   <div class="tags">
-  <span class="tag">HTML</span>
-  <span class="tag">CSS</span>
-  <span class="tag">[Autre outil]</span>
+  <span class="tag">placeHOLDER</span>
+  <span class="tag">placeHOLDER</span>
+  <span class="tag">placeHOLDER</span>
   </div>
   </article>
   <article class="project">
   <div class="project-top">
-  <div class="project-icon">?</div>
-  <span class="project-type">[ANN�E] � [�COLE / PERSONNEL]</span>
+  <div class="project-icon">placeHOLDER</div>
+  <span class="project-type">[ANNÉE] ET [ÉCOLE / PERSONNEL]</span>
   </div>
-  <h3>[Nom de votre application]</h3>
-  <p>Expliquez le probl�me r�solu, les choix techniques et ce que vous avez appris. Ajoutez un lien vers le d�p�t ou une d�monstration si possible.</p>
+  <h3>placeHOLDER</h3>
+  <p>placeHOLDER</p>
   <div class="tags">
-  <span class="tag">[Langage]</span>
-  <span class="tag">SQL</span>
-  <span class="tag">Git</span>
+  <span class="tag">placeHOLDER</span>
+  <span class="tag">placeHOLDER</span>
+  <span class="tag">placeHOLDER</span>
   </div>
   </article>
   </div>
-  <p class="note">Remplace les textes entre crochets par tes informations et ajoute uniquement des projets que tu as r�ellement r�alis�s.</p>
   </section>
-    <section class="journey" id="parcours">
+  <section class="internships" id="stages">
   <div class="wrap">
   <div class="section-head">
   <div>
-  <div class="kicker">04 � Parcours</div>
-  <h2>Mon chemin dans l�informatique</h2>
+  <div class="kicker">04 Expériences</div>
+  <h2>Mes stages</h2>
   </div>
-  <p>Une formation qui relie les besoins des organisations aux solutions logicielles.</p>
+  <p>Les stages me permettent de mettre en pratique mes compétences et de découvrir le travail en équipe.</p>
+  </div>
+  <div class="internship-list">
+  <article class="internship">
+  <div class="internship-date">[Dates du stage]</div>
+  <div>
+  <h3>[Intitulé du stage]</h3>
+  <div class="internship-place">[Entreprise] · [Ville]</div>
+  <p>[Présente ici les missions réalisées, les outils utilisés et ce que tu as appris pendant ce stage.]</p>
+  <div class="tags">
+  <span class="tag">[Technologie]</span>
+  <span class="tag">[Compétence]</span>
+  <div class="internship-date">[Dates du stage]</div>
+  <div>
+  <h3>[Intitulé du stage]</h3>
+  <div class="internship-place">[Entreprise] · [Ville]</div>
+  <p>[Présente ici les missions réalisées, les outils utilisés et ce que tu as appris pendant ce stage.]</p>
+  <div class="tags">
+  <span class="tag">[Technologie]</span>
+  <span class="tag">[Compétence]</span>
+  <div class="internship-date">[Dates du stage]</div>
+  <div>
+  <h3>[Intitulé du stage]</h3>
+  <div class="internship-place">[Entreprise] · [Ville]</div>
+  <p>[Présente ici les missions réalisées, les outils utilisés et ce que tu as appris pendant ce stage.]</p>
+  <div class="tags">
+  <span class="tag">[Technologie]</span>
+  <span class="tag">[Compétence]</span>
+  </div>
+  </div>
+  </article>
+  </div>
+  </div>
+  </section>
+  <section class="journey" id="parcours">
+  <div class="wrap">
+  <div class="section-head">
+  <div>
+  <div class="kicker">05 Parcours</div>
+  <h2>Mon chemin dans l'informatique</h2>
+  </div>
   </div>
   <div class="timeline">
   <div class="step">
-  <b>[2025 � aujourd�hui] � BTS SIO option SLAM</b>
-  <p>[Nom du lyc�e] � d�veloppement, bases de donn�es, cybers�curit� et projets.</p>
+  <b>[2025 aujourdhui] BTS SIO option SLAM</b>
+  <p>[lycée public des sciences et du numérique louis armand] développement, bases de données, cyberscurité et projets.</p>
   </div>
   <div class="step">
-  <b>[Ann�e] � [Dipl�me pr�c�dent]</b>
-  <p>[Nom de l��tablissement] � [sp�cialit�s ou informations utiles].</p>
+  <b>[Anne] [Diplôme précédent]</b>
+  <p>[Nom de l'établissement] [spécialités ou informations utiles].</p>
   </div>
   <div class="step">
-  <b>[Dates] � [Stage / exp�rience]</b>
-  <p>[Organisation] � [missions et comp�tences d�couvertes].</p>
+  <b>[Dates] ET [Stage / expérience]</b>
+  <p>[Organisation] [missions et comptences dcouvertes].</p>
   </div>
   </div>
   </div>
@@ -547,18 +618,18 @@
     <section class="wrap" id="contact">
   <div class="contact">
   <div>
-  <div class="kicker">05 � Contact</div>
-  <h2>Un projet ou une opportunit� ?</h2>
-  <p>Je serais ravi d��changer avec vous au sujet d�un stage, d�une alternance ou d�un projet.</p>
+  <div class="kickerContact">05 Contact</div>
+  <h2>Un projet ou une opportunité ?</h2>
+  <p>Je serais ravi d'échanger avec vous au sujet d'un stage, d'une alternance ou d'un projet.</p>
   </div>
-  <a class="button" href="mailto:[votre.email@exemple.fr]">M��crire ?</a>
+  <a class="button" href="mailto:[seb.esparza95@gmail.com]">M'écrire ?</a>
   </div>
   </section>
   </main>
   <footer>
   <div class="wrap foot">
-  <span>� <span id="year">2026</span> [Pr�nom Nom] � Portfolio BTS SIO SLAM</span>
-  <span>R�alis� avec HTML & CSS</span>
+  <span> <span id="year">2026</span> Sébastien ESPARZA  Portfolio BTS SIO SLAM</span>
+  <span>Réalisé avec HTML & CSS</span>
   </div>
   </footer>
 </body>
