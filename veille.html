@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Veille technologique de Sébastien Esparza sur les nanotechnologies et leurs applications.">
+  <title>Veille technologique — Portfolio de Sébastien Esparza</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-hero{padding:72px 0 55px;border-bottom:1px solid var(--line)}
+    .page-hero h1{font-size:clamp(3rem,7vw,5.3rem);line-height:1;letter-spacing:-.075em;margin:20px 0}
+    .page-hero h1 em{font-style:normal;color:#c32231}
+    .page-hero p{max-width:650px;color:var(--muted);font-size:1.08rem}
+    .watch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .watch-card{padding:26px;background:#1b1b1b;border:1px solid var(--line);border-radius:13px}
+    .watch-card .num{font:.75rem ui-monospace,monospace;color:#b42331}
+    .watch-card h2{font-size:1.3rem;letter-spacing:-.03em;margin:13px 0 8px}
+    .watch-card p{font-size:.92rem;color:var(--muted);margin:0}
+    .method{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}
+    .method h2{font-size:clamp(2rem,4vw,3rem);line-height:1.05;letter-spacing:-.06em;margin:8px 0}
+    .method-copy{color:var(--muted)}
+    .sources{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .source{display:inline-flex;padding:9px 13px;border:1px solid var(--line);border-radius:8px;text-decoration:none;font-size:.85rem;color:#f0aab0}
+    .source:hover{border-color:#c32231;color:white}
+    .back-link{display:inline-block;margin-top:24px;color:#f0aab0;text-decoration:none;font-weight:700}
+    @media(max-width:760px){.watch-grid{grid-template-columns:1fr}.method{grid-template-columns:1fr;gap:16px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap nav" aria-label="Navigation principale">
+      <a class="brand" href="index.html">portfolio<span>.</span></a>
+      <div class="navlinks">
+        <a href="index.html#profil">Profil</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="index.html#projets">Projets</a>
+        <a href="index.html#stages">Stages</a>
+        <a href="veille.html" aria-current="page">Veille</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="wrap page-hero">
+      <div class="eyebrow"><span class="dot"></span> BTS SIO · SLAM</div>
+      <h1>Ma veille<br><em>technologique.</em></h1>
+      <p>Les nanotechnologies étudient et manipulent la matière à une échelle extrêmement petite. Ma veille explore leurs principes, leurs applications et les questions qu’elles soulèvent.</p>
+    </section>
+    <section class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">01 · Mes sujets</div><h2>Ce que je surveille</h2></div>
+        <p>Je m’intéresse aux avancées scientifiques, aux usages concrets et aux effets de ces technologies dans différents secteurs.</p>
+      </div>
+      <div class="watch-grid">
+        <article class="watch-card">
+          <span class="num">01 / FONDAMENTAUX</span>
+          <h2>La matière à l’échelle nanométrique</h2>
+          <p>J’étudie ce que représente l’échelle du nanomètre et comment les propriétés d’un matériau peuvent changer lorsqu’on agit à cette dimension.</p>
+          <div class="tags"><span class="tag">Nanomètre</span><span class="tag">Matériaux</span><span class="tag">Recherche</span></div>
+        </article>
+        <article class="watch-card">
+          <span class="num">02 / SANTÉ</span>
+          <h2>Applications médicales</h2>
+          <p>Je suis les recherches sur l’utilisation de nanoparticules et de nanomatériaux pour le diagnostic, l’imagerie et l’administration ciblée de traitements.</p>
+          <div class="tags"><span class="tag">Nanomédecine</span><span class="tag">Diagnostic</span><span class="tag">Traitements</span></div>
+        </article>
+        <article class="watch-card">
+          <span class="num">03 / MATÉRIAUX</span>
+          <h2>Des matériaux aux nouvelles propriétés</h2>
+          <p>Les nanomatériaux peuvent présenter des caractéristiques particulières. Je m’intéresse à leurs usages possibles dans l’électronique, l’énergie et les objets du quotidien.</p>
+          <div class="tags"><span class="tag">Nanomatériaux</span><span class="tag">Électronique</span><span class="tag">Énergie</span></div>
+        </article>
+        <article class="watch-card">
+          <span class="num">04 / SOCIÉTÉ</span>
+          <h2>Impacts et précautions</h2>
+          <p>Je consulte également les travaux portant sur les effets potentiels des nanoparticules sur la santé et l’environnement, ainsi que sur les règles qui encadrent leurs usages.</p>
+          <div class="tags"><span class="tag">Santé</span><span class="tag">Environnement</span><span class="tag">Réglementation</span></div>
+        </article>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="wrap method">
+        <div><div class="kicker">02 · Ma méthode</div><h2>Suivre les découvertes et prendre du recul.</h2></div>
+        <div class="method-copy">
+          <p>Je consulte des sources scientifiques et institutionnelles, puis je compare les informations et vérifie leur origine avant d’en retenir les points utiles. Je cherche à distinguer les résultats de recherche confirmés des pistes encore à l’étude.</p>
+          <p>Cette page évoluera au fil de mes recherches : j’y ajouterai des sujets étudiés, des synthèses et la date de mise à jour correspondante.</p>
+          <div class="sources" aria-label="Sources de veille">
+            <a class="source" href="https://www.cnrs.fr/fr/nanosciences-et-nanotechnologies" target="_blank" rel="noopener noreferrer">CNRS ↗</a>
+            <a class="source" href="https://www.inrs.fr/risques/nanomatériaux/ce-qu-il-faut-retenir.html" target="_blank" rel="noopener noreferrer">INRS ↗</a>
+            <a class="source" href="https://www.anses.fr/fr/content/nanomateriaux" target="_blank" rel="noopener noreferrer">ANSES ↗</a>
+          </div>
+          <a class="back-link" href="index.html">← Retour au portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><span>2026 Sébastien ESPARZA · Portfolio BTS SIO SLAM</span></div></footer>
+</body>
+</html>
